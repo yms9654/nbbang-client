@@ -1,25 +1,20 @@
 Ext.define('NbbangClient.view.Main', {
-    extend: 'Ext.Carousel',
+    extend: 'Ext.Container',
+	layout: 'vbox',
     xtype: 'main',
     
     config: {
         fullscreen: true,
-    
-        defaults: {
-            styleHtmlContent: true
-        },
-        
         items: [
             {
+				xtype: 'panel',
                 html: 'Item 1',
-                style: 'background-color: #5E99CC'
+				flex: 1
             },
             {
+				xtype: 'panel',
                 html: 'Item 2',
-                style: 'background-color: #759E60'
-            },
-            {
-                html: 'Item 3'
+				flex: 2
             }
         ]
     }    
