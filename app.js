@@ -13,9 +13,13 @@ Ext.application({
 					html: 'total',
 					style: 'color: white; font-size:22px'
 				}, {
-					html: 'test2',
+					xtype: 'button',
+					cls: 'btnPlus',
 					docked: 'right',
-					padding: 10
+					padding: 10,
+					handler: function() {
+						Ext.Msg.alert("알림", "버튼누름", Ext.EmptyFn);
+					}
 				}]
             }, {
                 html: 'view 2',
