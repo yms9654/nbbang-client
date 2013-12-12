@@ -6,12 +6,12 @@ Ext.application({
             items: [{
 				xtype: 'container',
 				layout: 'hbox',
-                style: 'background-color: #7DB9F5;',
+                style: 'background-color: #96BFFE;',
 				padding: 10,
-                flex: 1,
+                flex: 0.5,
 				items: [{
 					html: 'total',
-					style: 'color: white; font-size:22px'
+					style: 'color: white; font-size: 22px'
 				}, {
 					xtype: 'button',
 					cls: 'btnPlus',
@@ -22,9 +22,10 @@ Ext.application({
 					}
 				}]
             }, {
-                html: 'view 2',
-                style: 'background-color: #7DB9F5;',
-                flex: 1
+                html: '+12,000',
+				padding: 8,
+                style: 'background-color: #96BFFE; color: white; vertical-align: middle; font-size: 28px',
+                flex: 0.6
             }, {
                 html: 'view 3',
                 style: 'background-color: white;',
